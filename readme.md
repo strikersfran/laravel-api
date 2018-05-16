@@ -5,11 +5,42 @@ Laravel API Un pequeño proyecto para crear funciones estándar en la elaboraci�
 
 ## Requisitos previos
 
-"php": ">=5.6.4"
+php: >=5.6.4
+composer: >= 2.*
 
 ### Instalación
 
+Para su instalaci{on basta seguir los siguientes pasos:
 
+* Clonar el proyecto
+```
+git clone https://github.com/strikersfran/laravel-api.git
+```
+
+* Actualizar dependencias
+```
+composer update
+```
+
+* Crear base de datos y actualizar el archivo .env
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=corvettebot
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+* Ejecutar Migraciones
+```
+php artisan migrate
+```
+
+* Ejecutar seeder
+```
+php artisan db:seed
+```
 
 ## Autor
 
